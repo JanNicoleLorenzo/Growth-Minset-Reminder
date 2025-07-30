@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Growth Mindset Quote</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .quote-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+    }
+    .quote {
+      font-size: 1.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <div class="quote" id="quote"></div>
+  </div>
+
+  <script>
+    const quotes = [
+      "Mistakes are proof that you are trying.",
+      "Your only limit is your mind.",
+      "Every expert was once a beginner.",
+      "Failure is simply the opportunity to begin again, this time more intelligently. – Henry Ford",
+      "Doubt kills more dreams than failure ever will.",
+      "Don’t wish it were easier. Wish you were better. – Jim Rohn",
+      "It’s not about being the best. It’s about being better than you were yesterday.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts. – Winston Churchill",
+      "Small progress is still progress.",
+      "Growth is painful. Change is painful. But nothing is as painful as staying stuck somewhere you don’t belong."
+    ];
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('quote').textContent = quote;
+  </script>
+</body>
+</html>
